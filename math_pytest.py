@@ -34,3 +34,7 @@ class TestDivision:
     def test_zero(self):
         with pytest.raises(ValueError, match="Cannot divide by zero"):
             divide(10, 0)
+
+
+type username : nareshgaurse
+password: Hakuna@198721
