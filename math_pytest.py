@@ -33,8 +33,4 @@ class TestDivision:
         assert math_operations.divide(-10, -2) == 5
     def test_zero(self):
         with pytest.raises(ValueError, match="Cannot divide by zero"):
-            divide(10, 0)
-
-
-type username : nareshgaurse
-password: Hakuna@198721
+            math_operations.divide(10, 0)
