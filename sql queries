@@ -1,0 +1,32 @@
+Write a SQL query to retrieve all employees from the “employees” table.
+select * from Employees;
+
+Write a SQL query to retrieve the first name and last name of employees whose salary is greater than $55,000.
+select first_name, last_name from Employees where salary > 55000;
+
+Write a SQL query to retrieve the department names along with the number of employees in each department.
+SELECT departments.department_name, COUNT(employees.employee_id) AS num_of_employees
+FROM departments
+LEFT JOIN employees ON departments.department_id = employees.department_id
+GROUP BY departments.department_name;
+
+Write a SQL query to retrieve the average salary of all employees.
+select AVG(salary) as average_salary from Employees;
+
+Write a SQL query to retrieve the employee with the highest salary.
+select MAX(salary) as heighest_salary from Employees;
+
+Write a SQL query to retrieve the employees who were hired in the year 2022.
+select * from Employees where hire_date between '2022-01-01' and '2022-12-31';
+
+Write a SQL query to update the salary of the employee with ID 3 to $60,000.
+UPDATE employees SET salary = 60000 WHERE employee_id = 3;
+
+Write a SQL query to delete all employees with a salary less than $50,000.
+DELETE FROM employees WHERE salary < 50000;
+
+Write a SQL query to retrieve the employees’ first names and department names for employees working in the “IT” department.
+SELECT employees.first_name, departments.department_name FROM employees JOIN departments ON employees.department_id = departments.department_id WHERE departments.department_name = 'IT';
+
+Write a SQL query to retrieve the employees’ first names and hire dates, ordered by hire date in ascending order
+select first_name, hire_date from Employees ORDER BY hire_date ASC;
