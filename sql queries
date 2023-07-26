@@ -1,8 +1,12 @@
+<<<<<<< HEAD
+assignments
+
 SQL assignments
 assignments completed
 
 
 
+>>>>>>> origin/test1
 Write a SQL query to retrieve all employees from the “employees” table.
 select * from Employees;
 
@@ -19,7 +23,7 @@ Write a SQL query to retrieve the average salary of all employees.
 select AVG(salary) as average_salary from Employees;
 
 Write a SQL query to retrieve the employee with the highest salary.
-select MAX(salary) as heighest_salary from Employees;
+select MAX(salary) as highest_salary from Employees;
 
 Write a SQL query to retrieve the employees who were hired in the year 2022.
 select * from Employees where hire_date between '2022-01-01' and '2022-12-31';
