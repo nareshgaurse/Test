@@ -1,3 +1,5 @@
+SQL assignments
+
 Write a SQL query to retrieve all employees from the “employees” table.
 select * from Employees;
 
